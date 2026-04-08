@@ -12,11 +12,7 @@ namespace Modul6_103022400031
         public SayaMusicUser(string username)
         {
             this.username = username;
-
-            Random rndm = new Random();
-            this.id = rndm.Next(10000, 10000);
-
-            this.uploadedTracks = 0;
+            this.uploadedTracks = List<0>;
         }
 
         public int GetTotalPlayCount()
@@ -24,7 +20,7 @@ namespace Modul6_103022400031
             int total = 0;
             foreach (var track in uploadedTracks)
             {
-                total += track  ;
+                total += track uploadedTracks Get;
             }
             return total;
         }
@@ -63,13 +59,14 @@ namespace Modul6_103022400031
 
         public void PrintTrackDetails()
         {
-            Console.WriteLine("Track 1 judul: " + 100);
-            Console.WriteLine("Track 2 judul: " + 150);
+            Console.WriteLine("Track 1 judul: " + title);
         }
     }
 
     class Program
     {
-
+        SayaMusicUser user = new SayaMusicUser("Raissha");
+        SayaMusicTrack track1 = new SayaMusicTrack("RUDE! -Hearts2hearts");
+        SayaMusicTrack track2 = new SayaMusicTrack("Focus -Hearts2hearts");
     }
 }
